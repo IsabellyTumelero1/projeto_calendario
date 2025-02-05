@@ -207,6 +207,7 @@
             // 
             // CalendarioIcone
             // 
+            this.CalendarioIcone.ContextMenuStrip = this.contextMenuStrip1;
             this.CalendarioIcone.Icon = ((System.Drawing.Icon)(resources.GetObject("CalendarioIcone.Icon")));
             this.CalendarioIcone.Text = "Calendario";
             this.CalendarioIcone.Visible = true;
@@ -219,6 +220,7 @@
             this.Fechar});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(181, 92);
+            this.contextMenuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.contextMenuStrip1_ItemClicked);
             // 
             // Restaurar
             // 

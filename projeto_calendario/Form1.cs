@@ -75,5 +75,21 @@ namespace projeto_calendario
             txt_final2.Text = monthCalendar.SelectionEnd.ToShortDateString();
             txt_atual2.Text = monthCalendar.TodayDate.ToShortDateString();
         }
+
+        private void contextMenuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            if (e.ClickedItem.Name.ToString() == "Fechar")
+            {
+                this.Close();
+            }
+            else if (e.ClickedItem.Name.ToString() == "Restaurar")
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else if (e.ClickedItem.Name.ToString() == "Mensagem")
+            {
+                MessageBox.Show("Você está lendo essa mensagem!");
+            }
+        }
     }
 }
